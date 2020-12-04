@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
   s.dependency 'FBAudienceNetwork', '6.2.0'
   s.dependency 'UnityAds', '3.5.0'
   s.dependency 'VungleSDK-iOS', '6.8.1'
+  s.source = { :http => 'https://github.com/scalemonk/mediation-sdk-ios-framework/releases/download/0.0.6/ScaleMonkAds.xcframework.zip' }
   
   s.subspec 'Core' do |core|
     core.name = 'Core'
