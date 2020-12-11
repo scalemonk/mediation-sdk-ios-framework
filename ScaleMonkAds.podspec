@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name         = 'ScaleMonkAds'
-  s.version      = '0.0.8'
+  s.version      = '0.0.9'
   s.summary      = 'TODO'
   s.homepage     = 'TODO'
   s.license      = 'TODO'
   s.author       = { 'TODO (name)' => 'TODO (email)' }
-  s.source       = { :git => 'git@github.com:scalemonk/mediation-sdk-ios.git', :tag => s.version.to_s }
+  s.source       = { :git => 'git@github.com:scalemonk/mediation-sdk-ios-framework.git', :tag => s.version.to_s }
   s.swift_version = '5.1'
   
   s.dependency 'Google-Mobile-Ads-SDK', '7.64.0'
