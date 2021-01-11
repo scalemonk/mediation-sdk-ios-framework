@@ -1,5 +1,11 @@
+//  SMAdMobProvider.h
+//
+//  © 2020 ScaleMonk, Inc. All Rights Reserved.
+// Licensed under the ScaleMonk SDK License Agreement
+// https://www.scalemonk.com/legal/en-US/mediation-license-agreement/index.html
+//
+
 #import <Foundation/Foundation.h>
-#import <GoogleMobileAds/GADBannerView.h>
 #import "SMProviderProtocol.h"
 #import "SMInterstitialProtocol.h"
 #import "SMBannerProtocol.h"
@@ -12,13 +18,5 @@
 
 @property (weak) SMProviderCallbacks* adsInstance;
 + (SMAdMobProvider*) admobDefault;
-
-@end
-
-@interface AdMobSize : NSObject
-
-@property (nonatomic) GADAdSize gadSize;
-
-+ (AdMobSize*)forSize:(GADAdSize)size;
 
 @end

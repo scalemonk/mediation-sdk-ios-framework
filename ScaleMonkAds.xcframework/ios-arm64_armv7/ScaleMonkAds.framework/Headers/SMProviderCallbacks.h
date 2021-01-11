@@ -1,3 +1,10 @@
+//  SMProviderCallbacks.h
+//
+//  © 2020 ScaleMonk, Inc. All Rights Reserved.
+// Licensed under the ScaleMonk SDK License Agreement
+// https://www.scalemonk.com/legal/en-US/mediation-license-agreement/index.html
+//
+
 #import <Foundation/Foundation.h>
 #import "SMProvidersSetup.h"
 #import "SMAnalyticsListener.h"
@@ -48,7 +55,8 @@
  @warning You should not use this method.
  */
 - (void)didViewErrorWithAttrProvider:(SMWaterfallEntry* _Nullable)attr
-                          withTag:(NSString* _Nullable)tag;
+                             withTag:(NSString* _Nullable)tag
+                    errorDescription:(NSString* _Nullable)error;
 
 /**
  This method is called by the providers to inform the SDK that the ad being displayed was clicked by the

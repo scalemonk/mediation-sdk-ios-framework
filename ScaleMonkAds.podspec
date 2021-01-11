@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'ScaleMonkAds'
-  s.version      = '0.0.10'
+  s.version      = '0.1.1'
   s.summary      = 'TODO'
   s.homepage     = 'TODO'
   s.license      = 'TODO'
@@ -15,6 +15,8 @@ Pod::Spec.new do |s|
   s.dependency 'VungleSDK-iOS', '6.8.1'
   s.dependency 'UAObfuscatedString', '~> 0.3.2'
   s.dependency 'DTFoundation/DTASN1', '1.7.13'
+  s.dependency 'IronSourceSDK', '7.0.3.0'
+  s.dependency 'GoogleAds-IMA-iOS-SDK', '3.11.3'
   
   s.frameworks = 'iAd', 'WebKit', 'CoreTelephony', 'SystemConfiguration', 'AdSupport'
   

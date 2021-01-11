@@ -1,14 +1,14 @@
+//  SMProviderProtocol.h
+//
+//  © 2020 ScaleMonk, Inc. All Rights Reserved.
+// Licensed under the ScaleMonk SDK License Agreement
+// https://www.scalemonk.com/legal/en-US/mediation-license-agreement/index.html
+//
+
 #import <Foundation/Foundation.h>
 
 @class SMProviderCallbacks;
 @class SMWaterfallEntry;
-
-typedef NS_ENUM(NSInteger, SMGDPRConsentStatus){
-    NotAplicable = 1,
-    Unknown = 2,
-    Granted = 3,
-    Revoked = 4
-};
 
 @protocol SMProviderProtocol <NSObject>
 
@@ -60,5 +60,9 @@ typedef NS_ENUM(NSInteger, SMGDPRConsentStatus){
                      andAdsInstance:(SMProviderCallbacks*)adsInstance
                andGDPRConsentStatus: (Boolean) gDPRConsentStatus;
 
-- (void) updateConsentStatus: (SMGDPRConsentStatus)status;
+- (void)setHasGDPRConsent: (BOOL)status;
+
+- (void)setUserCantGiveGDPRConsent: (BOOL)status;
+
+- (void)setIsApplicationChildDirected: (BOOL)status;
 @end
