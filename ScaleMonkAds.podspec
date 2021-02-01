@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'ScaleMonkAds'
-  s.version      = '0.1.1-alpha.2'
+  s.version      = '0.1.1-alpha.3'
   s.summary      = 'TODO'
   s.homepage     = 'https://www.scalemonk.com'
   s.license      = 'https://www.scalemonk.com/legal/en-US/mediation-license-agreement/index.html'
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   
   s.dependency 'RxSwift', '~> 5'
   s.dependency 'Willow', '~> 5.0'
-  s.dependency 'SMAnalytics' , '~> 0.2'
+  s.dependency 'SMAnalytics' , '~> 0.3'
   s.dependency 'SMDeviceInfo', '~> 0.1'
   
   s.dependency 'Google-Mobile-Ads-SDK', '7.64.0'
