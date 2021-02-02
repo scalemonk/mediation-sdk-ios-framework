@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'ScaleMonkAds'
-  s.version      = '0.1.1-alpha.3'
+  s.version      = '0.1.1-alpha.4'
   s.summary      = 'TODO'
   s.homepage     = 'https://www.scalemonk.com'
   s.license      = 'https://www.scalemonk.com/legal/en-US/mediation-license-agreement/index.html'
