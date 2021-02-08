@@ -6,4 +6,6 @@ All notable changes to this project will be documented in this file.
 - Remove swift interface
 
 ## [0.1.1] - 2021-02-01
-- First version
+- First version of ScaleMonkAds
+- Enables display of Banner, Interstitial and Rewarded Video ads
+- Integrates with AdMob, Applovin, Facebook, IronSource, UnityAds and Vungle SDKs
