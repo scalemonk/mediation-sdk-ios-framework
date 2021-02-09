@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [0.3.0] - 2021-02-09
+- Fix ironSource crash when calling `setUserCantGiveGDPRConsentWithStatus`
+- Renamed swift methods in API to make them more intuitive
+
 ## [0.2.0] - 2021-02-08
 - Fix `setUserCantGiveGDPRConsentWithStatus` method.
 - Added `isRewardedReadyToShow` and `isInterstitialReadyToShow`.
