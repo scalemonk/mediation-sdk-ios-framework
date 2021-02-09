@@ -302,7 +302,7 @@
 		</data>
 		<key>Headers/ScaleMonkAds-Swift.h</key>
 		<data>
-		6VD6MsqZiIs0QCq81Opuhosc/Ps=
+		stGkKV0gE38uJYOXBw9uL3ZLvcA=
 		</data>
 		<key>Headers/ScaleMonkAds.h</key>
 		<data>
@@ -310,31 +310,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		b3DPb9/x2b8wdS5rkRzUxrn8m8o=
+		egEEMfMgfulasTdEMicKc9xaQtM=
 		</data>
 		<key>Modules/ScaleMonkAds.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		x3EUsSfCGRIjUTbwZ7Zh2VYIoMQ=
+		zYd/mwDH9vSufPQFjb8dDU42Aik=
 		</data>
 		<key>Modules/ScaleMonkAds.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xEheucbtZhRBk9TucmvRcHV+bM0=
+		GT031YHTQP4tJ3wP1pONpKu6FeU=
 		</data>
 		<key>Modules/ScaleMonkAds.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6rLJNUdPPtX02bcosh3NPlpaRWw=
+		F0RO+Jx1Pg4qaE+sUFywPDpmq9w=
 		</data>
 		<key>Modules/ScaleMonkAds.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		x3EUsSfCGRIjUTbwZ7Zh2VYIoMQ=
+		zYd/mwDH9vSufPQFjb8dDU42Aik=
 		</data>
 		<key>Modules/ScaleMonkAds.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		xEheucbtZhRBk9TucmvRcHV+bM0=
+		GT031YHTQP4tJ3wP1pONpKu6FeU=
 		</data>
 		<key>Modules/ScaleMonkAds.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		6rLJNUdPPtX02bcosh3NPlpaRWw=
+		F0RO+Jx1Pg4qaE+sUFywPDpmq9w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1161,11 +1161,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6VD6MsqZiIs0QCq81Opuhosc/Ps=
+			stGkKV0gE38uJYOXBw9uL3ZLvcA=
 			</data>
 			<key>hash2</key>
 			<data>
-			G9Hi8+pkHZqTtjjMSOkv2Qjz7uO3SI5DkLMGK2bCT5c=
+			gKzwleOmPR2S/BgCbv6NJ3667bp4YAzvgi3TJDZQw58=
 			</data>
 		</dict>
 		<key>Headers/ScaleMonkAds.h</key>
@@ -1183,66 +1183,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x3EUsSfCGRIjUTbwZ7Zh2VYIoMQ=
+			zYd/mwDH9vSufPQFjb8dDU42Aik=
 			</data>
 			<key>hash2</key>
 			<data>
-			aw7WzSjBwHvlau+QeHEtoOkhOwyScXB6zq4aJOkEwaY=
+			GWW49VD7giiV+Bv2GQFmYvIZFctRqUUdWQdfN+/1YZ0=
 			</data>
 		</dict>
 		<key>Modules/ScaleMonkAds.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xEheucbtZhRBk9TucmvRcHV+bM0=
+			GT031YHTQP4tJ3wP1pONpKu6FeU=
 			</data>
 			<key>hash2</key>
 			<data>
-			DzTB90YAoVfuajdk+F2xlQUYXuCnYm6/yAmKDjykjUc=
+			2DqoIyGTqxwmrQYWGJC+3QdAyIW1oVFbX8q5gVR1PEc=
 			</data>
 		</dict>
 		<key>Modules/ScaleMonkAds.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6rLJNUdPPtX02bcosh3NPlpaRWw=
+			F0RO+Jx1Pg4qaE+sUFywPDpmq9w=
 			</data>
 			<key>hash2</key>
 			<data>
-			lPgNjK5lHosgly+Hj7xsgovMjFoFCBnlOSTMkdD1Tdw=
+			UJzC/hViNKfA1HvjlWfp/+wdKtlG9GmuU5O3HV+kbPs=
 			</data>
 		</dict>
 		<key>Modules/ScaleMonkAds.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			x3EUsSfCGRIjUTbwZ7Zh2VYIoMQ=
+			zYd/mwDH9vSufPQFjb8dDU42Aik=
 			</data>
 			<key>hash2</key>
 			<data>
-			aw7WzSjBwHvlau+QeHEtoOkhOwyScXB6zq4aJOkEwaY=
+			GWW49VD7giiV+Bv2GQFmYvIZFctRqUUdWQdfN+/1YZ0=
 			</data>
 		</dict>
 		<key>Modules/ScaleMonkAds.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xEheucbtZhRBk9TucmvRcHV+bM0=
+			GT031YHTQP4tJ3wP1pONpKu6FeU=
 			</data>
 			<key>hash2</key>
 			<data>
-			DzTB90YAoVfuajdk+F2xlQUYXuCnYm6/yAmKDjykjUc=
+			2DqoIyGTqxwmrQYWGJC+3QdAyIW1oVFbX8q5gVR1PEc=
 			</data>
 		</dict>
 		<key>Modules/ScaleMonkAds.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6rLJNUdPPtX02bcosh3NPlpaRWw=
+			F0RO+Jx1Pg4qaE+sUFywPDpmq9w=
 			</data>
 			<key>hash2</key>
 			<data>
-			lPgNjK5lHosgly+Hj7xsgovMjFoFCBnlOSTMkdD1Tdw=
+			UJzC/hViNKfA1HvjlWfp/+wdKtlG9GmuU5O3HV+kbPs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
