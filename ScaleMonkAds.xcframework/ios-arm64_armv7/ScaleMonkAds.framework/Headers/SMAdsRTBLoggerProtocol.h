@@ -2,7 +2,7 @@
 //
 //  © 2020 ScaleMonk, Inc. All Rights Reserved.
 // Licensed under the ScaleMonk SDK License Agreement
-// http://www.scalemonk.com/legal/en-US/mediation-license-agreement 
+// https://www.scalemonk.com/legal/en-US/mediation-license-agreement/index.html
 //
 
 #import "SMWaterfallEntry.h"
@@ -14,7 +14,8 @@ Logs a bid request to RTB provider event.
 
 @param attr The attributed provider instance.
 */
-- (void)logBidRequest:(SMWaterfallEntry*)attr;
+- (void)logBidRequest:(SMWaterfallEntry *)attr;
+
 /**
  Logs the latency of bid request to RTB provider event.
  
@@ -22,8 +23,8 @@ Logs a bid request to RTB provider event.
  @param error The error object.
  @param duration The duration of the round trip to the Exchange in ms.
  */
-- (void)logBidLatency:(SMWaterfallEntry*)attr
+- (void)logBidLatency:(SMWaterfallEntry *)attr
              duration:(NSNumber *)duration
-                error:(NSError*)error;
+                error:(NSError *)error;
 
 @end

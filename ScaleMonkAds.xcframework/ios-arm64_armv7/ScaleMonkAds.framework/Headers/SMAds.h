@@ -2,7 +2,7 @@
 //
 //  © 2020 ScaleMonk, Inc. All Rights Reserved.
 // Licensed under the ScaleMonk SDK License Agreement
-// http://www.scalemonk.com/legal/en-US/mediation-license-agreement 
+// https://www.scalemonk.com/legal/en-US/mediation-license-agreement/index.html
 //
 
 #import <Foundation/Foundation.h>
@@ -10,69 +10,73 @@
 #import "SMInterstitialAdEventListener.h"
 #import "SMBannerAdEventListener.h"
 #import "SMBannerView.h"
+#import "SMSessionService.h"
+#import "SMWrapperAnalytics.h"
 
 @interface SMAds : NSObject
 
-+ (SMAds*)sharedInstance;
++ (SMAds *)sharedInstance;
 
-- (instancetype)initWith:(NSString *)applicationId;
+- (instancetype)initWithApplicationId:(NSString *)applicationId;
+
+- (instancetype)initWithApplicationId:(NSString *)applicationId andCustomUserId: (NSString *)customUserId andAnalytics: (id<SMWrapperAnalytics>) analytics;
 
 - (void)initialize:(void (^)(BOOL))done;
 
-- (void)addVideoListener:(id<SMRewardedVideoAdEventListener>)listener;
+- (void)initialize;
 
-- (void)addInterstitialListener:(id<SMInterstitialAdEventListener>)listener;
+- (void)addVideoListener:(id <SMRewardedVideoAdEventListener>)listener;
 
-- (void)addBannerListener:(id<SMBannerAdEventListener>)listener;
+- (void)addInterstitialListener:(id <SMInterstitialAdEventListener>)listener;
+
+- (void)addBannerListener:(id <SMBannerAdEventListener>)listener;
 
 - (void)clearVideoListeners;
 
 - (void)clearInterstitialListeners;
 
-- (void)showInterstitialAdWithViewController:(UIViewController *)viewController
-                                      andTag:(NSString *)tag
-NS_SWIFT_NAME(showInterstitialAd(viewController:tag:));
+- (void)clearBannerListeners;
 
 - (void)showInterstitialAdWithViewController:(UIViewController *)viewController
-NS_SWIFT_NAME(showInterstitialAd(viewController:));
+                                      andTag:(NSString *)tag;
+
+- (void)showInterstitialAdWithViewController:(UIViewController *)viewController;
 
 - (void)showRewardedVideoAdWithViewController:(UIViewController *)viewController
-                                       andTag:(NSString *)tag
-NS_SWIFT_NAME(showRewardedVideoAd(viewController:tag:));
+                                       andTag:(NSString *)tag;
 
-- (void)showRewardedVideoAdWithViewController:(UIViewController *)viewController
-NS_SWIFT_NAME(showRewardedVideoAd(viewController:));
+- (void)showRewardedVideoAdWithViewController:(UIViewController *)viewController;
 
 - (void)showBannerAdWithViewController:(UIViewController *)viewController
                             bannerView:(SMBannerView *)bannerView
-                                andTag:(NSString *)tag
-NS_SWIFT_NAME(showBannerAd(viewController:bannerView:tag:));
+                                andTag:(NSString *)tag;
 
 - (void)showBannerAdWithViewController:(UIViewController *)viewController
-                            bannerView:(SMBannerView *)bannerView
-NS_SWIFT_NAME(showBannerAd(viewController:bannerView:));
+                            bannerView:(SMBannerView *)bannerView;
 
 - (void)stopLoadingBanners;
 
+- (void)stopLoadingBannersWithTag:(NSString *)tag;
+
 - (void)setIsApplicationChildDirected:(BOOL)childDirectedTreatment;
 
-- (void)setHasGDPRConsentWithStatus:(BOOL)status
-NS_SWIFT_NAME(setHasGDPRConsent(status:));
+- (void)setHasGDPRConsentWithStatus:(BOOL)status;
 
-- (void)setUserCantGiveGDPRConsentWithStatus:(BOOL)status
-NS_SWIFT_NAME(setUserCantGiveGDPRConsent(status:));
+- (void)setUserCantGiveGDPRConsentWithStatus: (BOOL) status;
 
-- (BOOL)isInterstitialReadyToShowWithTag:(NSString *)tag
-NS_SWIFT_NAME(isInterstitialReadyToShow(tag:));
+- (BOOL)areInterstitialsEnabled;
 
-- (BOOL)isRewardedReadyToShowWithTag:(NSString *)tag
-NS_SWIFT_NAME(isRewardedReadyToShow(tag:));
+- (BOOL)areVideosEnabled;
 
-- (BOOL)isInterstitialReadyToShow
-NS_SWIFT_NAME(isInterstitialReadyToShow());
+- (BOOL)areBannersEnabled;
 
-- (BOOL)isRewardedReadyToShow
-NS_SWIFT_NAME(isRewardedReadyToShow());
+- (BOOL)isInterstitialReadyToShow:(NSString *)tag;
+
+- (BOOL)isRewardedReadyToShow:(NSString *)tag;
+
+- (void)enablePolicy:(NSString*) policyName withSessionService: (id<SMSessionService>) sessionService;
+
+- (void)setExtraInfo:(NSDictionary*)extraInfo;
 
 @end
 
