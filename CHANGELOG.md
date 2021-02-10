@@ -1,9 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [0.4.0] - 2021-02-10
+- Fix AppLovin Mediation dialog popping up.
+- Updated `Google-Mobile-Ads-SDK` to version `7.69.0`.
+- Updated `AppLovinSDK` to version `6.15.1`.
+- Updated `FBAudienceNetwork` to version `6.2.1`.
+- Updated `VungleSDK-iOS` to version `6.8.1`.
+
 ## [0.3.0] - 2021-02-09
-- Fix ironSource crash when calling `setUserCantGiveGDPRConsentWithStatus`
-- Renamed swift methods in API to make them more intuitive
+- Fix ironSource crash when calling `setUserCantGiveGDPRConsentWithStatus`.
+- Renamed swift methods in API to make them more intuitive.
 
 ## [0.2.0] - 2021-02-08
 - Fix `setUserCantGiveGDPRConsentWithStatus` method.
