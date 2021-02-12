@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [0.4.1] - 2021-02-12
+- Fix crash when using Vungle test-mode.
+- Fixed banner analytics.
+
 ## [0.4.0] - 2021-02-10
 - Fix AppLovin Mediation dialog popping up.
 - Updated `Google-Mobile-Ads-SDK` to version `7.69.0`.
