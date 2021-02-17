@@ -2,17 +2,18 @@
 //
 //  © 2020 ScaleMonk, Inc. All Rights Reserved.
 // Licensed under the ScaleMonk SDK License Agreement
-// http://www.scalemonk.com/legal/en-US/mediation-license-agreement 
+// https://www.scalemonk.com/legal/en-US/mediation-license-agreement/index.html
 //
 
 #import <Foundation/Foundation.h>
 
 @class SMProviderCallbacks;
 @class SMWaterfallEntry;
+@protocol SMAdsRTBLoggerProtocol;
 
 @protocol SMProviderProtocol <NSObject>
 
-- (NSString*) name;
++ (NSString*) name;
 
 @optional
 
@@ -23,7 +24,7 @@
 
  @see TestMode enum.
  */
-+ (NSArray<NSNumber*>*)supportedTestModes;
++ (NSArray<NSNumber *> *)supportedTestModes;
 
 /**
  Transforms a given attributed provider to be on pair with the configured test mode, mainly through the
@@ -31,7 +32,7 @@
 
  @param attr The attributed provider.
  */
-+ (void)transformAttrToAdhereTestMode:(SMWaterfallEntry*)attr;
++ (void)transformAttrToAdhereTestMode:(SMWaterfallEntry *)attr;
 
 /**
  * Give providers a hook that is fired prior to call `initializeWithAllPlacements`.
@@ -43,6 +44,8 @@
 - (void)prepareForTestMode;
 
 @required
+
+- (id)initWithConfiguration:(NSDictionary *)configuration;
 
 /**
  Initializes the provider.
@@ -56,13 +59,13 @@
  @param adsInstance The SMProviderCallbacks instance.
  @param gDPRConsentStatus the GDPR consent status (true or false)
  */
-- (void)initializeWithAllPlacements:(NSMutableDictionary*)allPlacements
-                     andAdsInstance:(SMProviderCallbacks*)adsInstance
-               andGDPRConsentStatus: (Boolean) gDPRConsentStatus;
+- (void)initializeWithAllPlacements:(NSMutableDictionary *)allPlacements
+                     andAdsInstance:(SMProviderCallbacks *)adsInstance
+               andGDPRConsentStatus:(Boolean)gDPRConsentStatus;
 
-- (void)setHasGDPRConsent: (BOOL)status;
+- (void)setHasGDPRConsent:(BOOL)status;
 
-- (void)setUserCantGiveGDPRConsent: (BOOL)status;
+- (void)setUserCantGiveGDPRConsent:(BOOL)status;
 
-- (void)setIsApplicationChildDirected: (BOOL)status;
+- (void)setIsApplicationChildDirected:(BOOL)status;
 @end
