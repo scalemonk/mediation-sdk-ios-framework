@@ -2,7 +2,7 @@
 //
 //  © 2020 ScaleMonk, Inc. All Rights Reserved.
 // Licensed under the ScaleMonk SDK License Agreement
-// http://www.scalemonk.com/legal/en-US/mediation-license-agreement 
+// https://www.scalemonk.com/legal/en-US/mediation-license-agreement/index.html
 //
 
 #ifndef SMRTBWaterfallEntry_h
@@ -12,15 +12,15 @@
 
 @interface SMRTBWaterfallEntry : SMWaterfallEntry
 
-@property (nonatomic) int waterfallIndex;
-@property (nonatomic) NSString* payload;
-@property (nonatomic) NSString* payloadFormat;
-@property (nonatomic) NSString* auctionId;
-@property (nonatomic) NSString* impressionPayload;
-@property (nonatomic) NSString* providerId;
+@property(nonatomic) int waterfallIndex;
+@property(nonatomic) NSString *payload;
+@property(nonatomic) NSString *payloadFormat;
+@property(nonatomic) NSString *auctionId;
+@property(nonatomic) NSString *impressionPayload;
+@property(nonatomic) NSString *providerId;
 
-- (instancetype)initWithProvider:(id<SMProviderProtocol>)provider
-               providerPlacement:(NSString*)providerPlacement
+- (instancetype)initWithProvider:(id <SMProviderProtocol>)provider
+               providerPlacement:(NSString *)providerPlacement
                        forAdType:(AdTypeEnum)adType;
 
 @end
