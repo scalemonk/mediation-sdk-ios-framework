@@ -2,7 +2,7 @@
 //
 //  © 2020 ScaleMonk, Inc. All Rights Reserved.
 // Licensed under the ScaleMonk SDK License Agreement
-// http://www.scalemonk.com/legal/en-US/mediation-license-agreement 
+// https://www.scalemonk.com/legal/en-US/mediation-license-agreement/index.html
 //
 
 #ifndef _SMADS_Constants_
@@ -35,6 +35,7 @@
 #define kProviderGenericRenderer @"generic"
 #define kProviderAppLovinMediation   @"applovinmediation"
 #define kProviderMoPubMediation      @"mopubmediation"
+#define kProviderTest       @"testprovider"
 
 
 typedef enum {

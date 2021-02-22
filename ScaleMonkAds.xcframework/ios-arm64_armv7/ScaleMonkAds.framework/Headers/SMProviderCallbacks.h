@@ -2,11 +2,10 @@
 //
 //  © 2020 ScaleMonk, Inc. All Rights Reserved.
 // Licensed under the ScaleMonk SDK License Agreement
-// http://www.scalemonk.com/legal/en-US/mediation-license-agreement 
+// https://www.scalemonk.com/legal/en-US/mediation-license-agreement/index.html
 //
 
 #import <Foundation/Foundation.h>
-#import "SMProvidersSetup.h"
 #import "SMAnalyticsListener.h"
 #import "SMBannerView.h"
 #import "SMWaterfallEntry.h"
@@ -22,7 +21,7 @@
 
  @warning You should not use this method.
  */
-- (void)didCacheSuccessWithAttrProvider:(SMWaterfallEntry* _Nullable)attr;
+- (void)didCacheSuccessWithAttrProvider:(SMWaterfallEntry *_Nullable)attr;
 
 /**
  This method is called by the providers to inform the SDK that a cache request has failed.
@@ -31,7 +30,7 @@
 
  @warning You should not use this method.
  */
-- (void)didCacheFailWithAttrProvider:(SMWaterfallEntry* _Nullable)attr;
+- (void)didCacheFailWithAttrProvider:(SMWaterfallEntry *_Nullable)attr;
 
 /**
  This method is called by the providers to inform the SDK that the ad has started being displayed on
@@ -42,8 +41,8 @@
 
  @warning You should not use this method.
  */
-- (void)didViewStartWithAttrProvider:(SMWaterfallEntry* _Nullable)attr
-                          withTag:(NSString* _Nullable)tag;
+- (void)didViewStartWithAttrProvider:(SMWaterfallEntry *_Nullable)attr
+                             withTag:(NSString *_Nullable)tag;
 
 /**
  This method is called by the providers to inform the SDK that the ad was not displayed due to an
@@ -54,9 +53,9 @@
 
  @warning You should not use this method.
  */
-- (void)didViewErrorWithAttrProvider:(SMWaterfallEntry* _Nullable)attr
-                             withTag:(NSString* _Nullable)tag
-                    errorDescription:(NSString* _Nullable)error;
+- (void)didViewErrorWithAttrProvider:(SMWaterfallEntry *_Nullable)attr
+                             withTag:(NSString *_Nullable)tag
+                    errorDescription:(NSString *_Nullable)error;
 
 /**
  This method is called by the providers to inform the SDK that the ad being displayed was clicked by the
@@ -67,8 +66,8 @@
 
  @warning You should not use this method.
  */
-- (void)didViewClickWithAttrProvider:(SMWaterfallEntry* _Nullable )attr
-                          withTag:(NSString* _Nullable)tag;
+- (void)didViewClickWithAttrProvider:(SMWaterfallEntry *_Nullable)attr
+                             withTag:(NSString *_Nullable)tag;
 
 /**
  This method is called by the providers to inform the SDK that the user can receive the reward for
@@ -79,8 +78,8 @@
 
  @warning You should not use this method.
  */
-- (void)didViewRewardWithAttrProvider:(SMWaterfallEntry* _Nullable)attr
-                           withTag:(NSString* _Nullable)tag;
+- (void)didViewRewardWithAttrProvider:(SMWaterfallEntry *_Nullable)attr
+                              withTag:(NSString *_Nullable)tag;
 
 /**
  This method is called by the providers to inform the SDK that the user cannot receive the reward for
@@ -91,8 +90,8 @@
 
  @warning You should not use this method.
  */
-- (void)didViewNoRewardWithAttrProvider:(SMWaterfallEntry* _Nullable)attr
-                             withTag:(NSString* _Nullable)tag;
+- (void)didViewNoRewardWithAttrProvider:(SMWaterfallEntry *_Nullable)attr
+                                withTag:(NSString *_Nullable)tag;
 
 /**
  This method is called by the providers to inform the SDK that the ad being displayed was closed by the
@@ -108,8 +107,8 @@
 
  @see SMVideoDelegate protocol.
  */
-- (void)didViewCloseWithAttrProvider:(SMWaterfallEntry* _Nullable)attr
-                          withTag:(NSString* _Nullable)tag
+- (void)didViewCloseWithAttrProvider:(SMWaterfallEntry *_Nullable)attr
+                             withTag:(NSString *_Nullable)tag
                     completedDisplay:(bool)completed;
 
 /**
@@ -121,7 +120,7 @@
 
  @warning You should not use this method.
  */
-- (void)didCompleteBannerViewWithAttrProvider:(SMWaterfallEntry* _Nullable)attr
-                                   withTag:(NSString* _Nullable)tag;
+- (void)didCompleteBannerViewWithAttrProvider:(SMWaterfallEntry *_Nullable)attr
+                                      withTag:(NSString *_Nullable)tag;
 
 @end
