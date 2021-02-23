@@ -58,9 +58,9 @@ Copyright (C) 2016 Apple Inc. All Rights Reserved.
 
 
 typedef enum : NSInteger {
-	NotReachable = 0,
-	ReachableViaWiFi,
-	ReachableViaWWAN
+    NotReachable = 0,
+    ReachableViaWiFi,
+    ReachableViaWWAN
 } SMMonitoringNetworkStatus;
 
 #pragma mark IPv6 Support
@@ -96,6 +96,7 @@ extern NSString *kSMMonitoringReachabilityChangedNotification;
  * Start listening for reachability notifications on the current run loop.
  */
 - (BOOL)startNotifier;
+
 - (void)stopNotifier;
 
 - (SMMonitoringNetworkStatus)currentReachabilityStatus;

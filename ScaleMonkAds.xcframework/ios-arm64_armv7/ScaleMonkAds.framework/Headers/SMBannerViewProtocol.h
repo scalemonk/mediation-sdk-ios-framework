@@ -2,7 +2,7 @@
 //
 //  © 2020 ScaleMonk, Inc. All Rights Reserved.
 // Licensed under the ScaleMonk SDK License Agreement
-// http://www.scalemonk.com/legal/en-US/mediation-license-agreement 
+// https://www.scalemonk.com/legal/en-US/mediation-license-agreement/index.html
 //
 
 #import <Foundation/Foundation.h>
@@ -14,13 +14,14 @@
 @protocol SMBannerViewProtocol <NSObject>
 
 
-@property (nonatomic) UIViewController* viewController;
-@property (nonatomic) bool isLoaded;
-@property (nonatomic) NSString* bannerTag;
-@property (nonatomic) SMBannerView* owner;
+@property(nonatomic) UIViewController *viewController;
+@property(nonatomic) bool isLoaded;
+@property(nonatomic) NSString *bannerTag;
+@property(nonatomic) SMBannerView *owner;
 
 
-- (void) requestLoad;
-- (void) notifyBannerShown;
+- (void)requestLoad;
+
+- (void)notifyBannerShown;
 
 @end
