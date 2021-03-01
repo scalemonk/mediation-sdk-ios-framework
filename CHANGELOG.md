@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [0.4.2] - 2021-03-01
+- Fixed facebook `allow tracking` to be mandatory only on iOS 14.5 onwards.
+
 ## [0.4.1] - 2021-02-12
 - Fix crash when using Vungle test-mode.
 - Fixed banner analytics.
