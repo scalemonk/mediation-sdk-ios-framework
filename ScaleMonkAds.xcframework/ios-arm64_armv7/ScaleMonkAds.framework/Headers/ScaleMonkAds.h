@@ -2,7 +2,7 @@
 //
 //  © 2020 ScaleMonk, Inc. All Rights Reserved.
 // Licensed under the ScaleMonk SDK License Agreement
-// http://www.scalemonk.com/legal/en-US/mediation-license-agreement 
+// https://www.scalemonk.com/legal/en-US/mediation-license-agreement/index.html
 //
 
 #import <Foundation/Foundation.h>
@@ -22,7 +22,9 @@ FOUNDATION_EXPORT const unsigned char MediationVersionString[];
 #import "SMBannerAdEventListener.h"
 #import "SMBannerView.h"
 #import "SMInterstitialAdEventListener.h"
-#import "SMRewardedVideoAdEventListener.h"
+#import "SMRewardedAdEventListener.h"
+#import "SMSessionService.h"
+#import "SMWrapperAnalytics.h"
 
 /// Private
 #import "SMBannerViewProtocol.h"
@@ -36,15 +38,7 @@ FOUNDATION_EXPORT const unsigned char MediationVersionString[];
 #import "SMInterstitialProtocol.h"
 #import "SMProviderCallbacks.h"
 #import "SMProviderProtocol.h"
-#import "SMProvidersSetup.h"
 #import "SMRTBWaterfallEntry.h"
 #import "SMVideoProtocol.h"
 #import "SMWaterfallEntry.h"
-#import "SMAdMobProvider.h"
-#import "SMApplovinAdloadDelegate.h"
-#import "SMAppLovinInterstitialDelegate.h"
-#import "SMAppLovinProvider.h"
-#import "SMAppLovinVideoDelegate.h"
-#import "SMFacebookProvider.h"
-#import "SMUnityAdsProvider.h"
-#import "SMVungleProvider.h"
+#import "SMSkAdNetworkProtocol.h"

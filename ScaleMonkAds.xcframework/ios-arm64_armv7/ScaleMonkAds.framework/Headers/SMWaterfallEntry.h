@@ -2,7 +2,7 @@
 //
 //  © 2020 ScaleMonk, Inc. All Rights Reserved.
 // Licensed under the ScaleMonk SDK License Agreement
-// http://www.scalemonk.com/legal/en-US/mediation-license-agreement 
+// https://www.scalemonk.com/legal/en-US/mediation-license-agreement/index.html
 //
 
 #import <Foundation/Foundation.h>
@@ -19,11 +19,11 @@ typedef NS_ENUM(NSInteger, TestMode) {
 
 @interface SMWaterfallEntry : NSObject
 
-@property (nonatomic, strong) NSString *providerPlacement;
-@property (nonatomic, strong) NSString *customName;
-@property (nonatomic) id<SMProviderProtocol> provider;
-@property (nonatomic) AdTypeEnum adType;
-@property (nonatomic) TestMode testMode;
+@property(nonatomic, strong) NSString *providerPlacement;
+@property(nonatomic, strong) NSString *customName;
+@property(nonatomic) id <SMProviderProtocol> provider;
+@property(nonatomic) AdTypeEnum adType;
+@property(nonatomic) TestMode testMode;
 
 /**
  Initializes a SMWaterfallEntry instance using a tuple {provider instance, placement, ad type}
@@ -34,8 +34,8 @@ typedef NS_ENUM(NSInteger, TestMode) {
 
  @return The initialized SMWaterfallEntry instance.
  */
-- (instancetype)initWithProvider:(id<SMProviderProtocol>)provider
-               providerPlacement:(NSString*)providerPlacement
+- (instancetype)initWithProvider:(id <SMProviderProtocol>)provider
+               providerPlacement:(NSString *)providerPlacement
                        forAdType:(AdTypeEnum)adType;
 
 /**
@@ -49,13 +49,13 @@ typedef NS_ENUM(NSInteger, TestMode) {
 
  @return The initialized SMWaterfallEntry instance with a custom name.
  */
-- (instancetype)initWithProvider:(id<SMProviderProtocol>)provider
-               providerPlacement:(NSString*)providerPlacement
+- (instancetype)initWithProvider:(id <SMProviderProtocol>)provider
+               providerPlacement:(NSString *)providerPlacement
                        forAdType:(AdTypeEnum)adType
-                  withCustomName:(NSString*)customName;
+                  withCustomName:(NSString *)customName;
 
 
-- (NSString*)name;
+- (NSString *)name;
 
 - (bool)isRTB;
 

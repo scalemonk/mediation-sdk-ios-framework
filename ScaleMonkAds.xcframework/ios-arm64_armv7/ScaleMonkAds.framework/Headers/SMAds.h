@@ -2,32 +2,46 @@
 //
 //  © 2020 ScaleMonk, Inc. All Rights Reserved.
 // Licensed under the ScaleMonk SDK License Agreement
-// http://www.scalemonk.com/legal/en-US/mediation-license-agreement 
+// https://www.scalemonk.com/legal/en-US/mediation-license-agreement/index.html
 //
 
 #import <Foundation/Foundation.h>
-#import "SMRewardedVideoAdEventListener.h"
+#import "SMRewardedAdEventListener.h"
 #import "SMInterstitialAdEventListener.h"
 #import "SMBannerAdEventListener.h"
 #import "SMBannerView.h"
+#import "SMSessionService.h"
+#import "SMWrapperAnalytics.h"
+#import "SMAnalyticsListener.h"
 
 @interface SMAds : NSObject
 
-+ (SMAds*)sharedInstance;
++ (SMAds *)sharedInstance;
 
-- (instancetype)initWith:(NSString *)applicationId;
+
+- (instancetype)init;
+
+- (instancetype)initWithCustomUserId: (NSString *)customUserId andAnalytics: (id<SMWrapperAnalytics>) analytics;
+
+- (instancetype)initWithApplicationId:(NSString *)applicationId;
+
+- (instancetype)initWithApplicationId:(NSString *)applicationId andCustomUserId: (NSString *)customUserId andAnalytics: (id<SMWrapperAnalytics>) analytics;
 
 - (void)initialize:(void (^)(BOOL))done;
 
-- (void)addVideoListener:(id<SMRewardedVideoAdEventListener>)listener;
+- (void)initialize;
+
+- (void)addRewardedListener:(id<SMRewardedAdEventListener>)listener;
 
 - (void)addInterstitialListener:(id<SMInterstitialAdEventListener>)listener;
 
 - (void)addBannerListener:(id<SMBannerAdEventListener>)listener;
 
-- (void)clearVideoListeners;
+- (void)clearRewardedListeners;
 
 - (void)clearInterstitialListeners;
+
+- (void)clearBannerListeners;
 
 - (void)showInterstitialAdWithViewController:(UIViewController *)viewController
                                       andTag:(NSString *)tag
@@ -36,12 +50,12 @@ NS_SWIFT_NAME(showInterstitialAd(viewController:tag:));
 - (void)showInterstitialAdWithViewController:(UIViewController *)viewController
 NS_SWIFT_NAME(showInterstitialAd(viewController:));
 
-- (void)showRewardedVideoAdWithViewController:(UIViewController *)viewController
-                                       andTag:(NSString *)tag
-NS_SWIFT_NAME(showRewardedVideoAd(viewController:tag:));
+- (void)showRewardedAdWithViewController:(UIViewController *)viewController
+                                  andTag:(NSString *)tag
+NS_SWIFT_NAME(showRewardedAd(viewController:tag:));
 
-- (void)showRewardedVideoAdWithViewController:(UIViewController *)viewController
-NS_SWIFT_NAME(showRewardedVideoAd(viewController:));
+- (void)showRewardedAdWithViewController:(UIViewController *)viewController
+NS_SWIFT_NAME(showRewardedAd(viewController:));
 
 - (void)showBannerAdWithViewController:(UIViewController *)viewController
                             bannerView:(SMBannerView *)bannerView
@@ -53,6 +67,8 @@ NS_SWIFT_NAME(showBannerAd(viewController:bannerView:tag:));
 NS_SWIFT_NAME(showBannerAd(viewController:bannerView:));
 
 - (void)stopLoadingBanners;
+
+- (void)stopLoadingBannersWithTag:(NSString *)tag;
 
 - (void)setIsApplicationChildDirected:(BOOL)childDirectedTreatment;
 
@@ -68,11 +84,23 @@ NS_SWIFT_NAME(isInterstitialReadyToShow(tag:));
 - (BOOL)isRewardedReadyToShowWithTag:(NSString *)tag
 NS_SWIFT_NAME(isRewardedReadyToShow(tag:));
 
+- (BOOL)areInterstitialsEnabled;
+
+- (BOOL)areRewardedEnabled;
+
+- (BOOL)areBannersEnabled;
+
+- (void)enablePolicy:(NSString*) policyName withSessionService: (id<SMSessionService>) sessionService;
+
+- (void)setExtraInfo:(NSDictionary*)extraInfo;
 - (BOOL)isInterstitialReadyToShow
 NS_SWIFT_NAME(isInterstitialReadyToShow());
 
 - (BOOL)isRewardedReadyToShow
 NS_SWIFT_NAME(isRewardedReadyToShow());
+
+- (void)addAnalytics: (id<SMAnalyticsListener>) analytics;
+NS_SWIFT_NAME(add(analytics:));
 
 @end
 
