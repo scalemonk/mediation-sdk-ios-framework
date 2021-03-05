@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.0] - 2021-03-05
+- Added the possibility to select which adnets to include and which versions of them.
+- Renamed Swift and Objective-C interface to have more natural names.
+- Verbose logging can now be turned on and off.
+
 ## [0.4.2] - 2021-03-01
 - Fixed facebook `allow tracking` to be mandatory only on iOS 14.5 onwards.
 
