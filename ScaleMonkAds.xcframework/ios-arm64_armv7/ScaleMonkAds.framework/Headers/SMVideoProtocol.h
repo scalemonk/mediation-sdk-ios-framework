@@ -2,7 +2,7 @@
 //
 //  © 2020 ScaleMonk, Inc. All Rights Reserved.
 // Licensed under the ScaleMonk SDK License Agreement
-// http://www.scalemonk.com/legal/en-US/mediation-license-agreement 
+// https://www.scalemonk.com/legal/en-US/mediation-license-agreement/index.html
 //
 
 #import <Foundation/Foundation.h>
@@ -17,14 +17,14 @@
 
  @return Whether there is a video ad is available for the attributed provider.
  */
-- (bool)isVideoAvailableForAttrProvider:(SMWaterfallEntry*)attrProvider;
+- (bool)isVideoAvailableForAttrProvider:(SMWaterfallEntry *)attrProvider;
 
 /**
  Triggers a provider SDK video cache.
 
  @param attrProvider The attributed provider.
  */
-- (void)loadVideoForAttrProvider:(SMWaterfallEntry*)attrProvider;
+- (void)loadVideoForAttrProvider:(SMWaterfallEntry *)attrProvider;
 
 /**
  Triggers a provider SDK video display.
@@ -33,9 +33,9 @@
  @param viewController The view controller that implements the delegates for that provider.
  @param tag The game tag where the ad will be displayed (like menu or shop).
  */
-- (bool)showVideoForAttrProvider:(SMWaterfallEntry*)attrProvider
-               onTopOfController:(UIViewController*)viewController
-             atAnalyticsTag:(NSString*)tag;
+- (bool)showVideoForAttrProvider:(SMWaterfallEntry *)attrProvider
+               onTopOfController:(UIViewController *)viewController
+                  atAnalyticsTag:(NSString *)tag;
 
 /**
  Returns information about auto cache for video ads.
